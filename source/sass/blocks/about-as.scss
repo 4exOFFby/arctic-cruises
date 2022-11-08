@@ -1,0 +1,143 @@
+.about-as {
+  padding: 120px 0 145px 0;
+
+  @media (min-resolution: 2dppx) {
+    .about-as {
+      background-image: url("../img/jpg/about-as-pinguins-retina.jpg");
+    }
+  }
+
+  h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: #011c40;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+
+  p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    margin: 0;
+    display: block;
+    max-width: 512px;
+  }
+
+  .about-as__container {
+    padding-right: 648px;
+    padding-left: 103px;
+    position: relative;
+  }
+
+  .about-as__container::before {
+    content: "";
+    width: 560px;
+    height: 301px;
+    position: absolute;
+    top: -10px;
+    right: 90px;
+    background-image: url("../img/jpg/about-as-pinguins.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1320px) {
+  .about-as {
+    .about-as__container::before {
+      width: 480px;
+      height: 301px;
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .about-as {
+    padding: 100px 0;
+
+    .about-as__container::before {
+      width: 324px;
+      height: 174px;
+      background-size: contain;
+      top: 10px;
+      right: 45px;
+    }
+
+
+    h2 {
+      font-size: 26px;
+      line-height: 36px;
+      display: block;
+      width: 205px;
+      margin-bottom: 30px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+      width: 325px;
+    }
+
+    .about-as__container {
+      padding-right: 349px;
+      padding-left: 45px;
+    }
+  }
+}
+
+@media (min-width: 840px) and (max-width: 1023px) {
+  .about-as {
+    .about-as__container::before {
+      width: 400px;
+      height: 240px;
+      background-size: contain;
+      top: 10px;
+      right: 45px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .about-as {
+    padding: 65px 0 235px 0;
+
+    p {
+      width: 100%;
+      max-width: 670px;
+    }
+
+    .about-as__container::before {
+      width: 90%;
+      max-width: 767px;
+      display: flex;
+      justify-content: center;
+      height: 156px;
+      background-size: cover;
+      top: auto;
+      bottom: -195px;
+      right: auto;
+    }
+
+    .about-as__container {
+      padding: 0 15px;
+    }
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  .about-as {
+    padding: 65px 0 435px 0;
+
+    .about-as__container::before {
+      height: 310px;
+      bottom: -375px;
+      width: 93%;
+      background-position: center;
+    }
+  }
+}

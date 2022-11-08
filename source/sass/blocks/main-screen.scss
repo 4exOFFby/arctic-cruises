@@ -1,0 +1,90 @@
+.main-screen {
+  background-color: #2b2bc4;
+  background-image: url("../img/jpg/main-screen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 283px 0;
+
+  h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 66px;
+    color: #f9fbfd;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #f9fbfd;
+    text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    margin: 0;
+  }
+
+  .main-screen__container {
+    max-width: 1300px;
+    padding: 0 150px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-screen {
+    padding: 280px 0;
+    background-image: url("../img/jpg/main-screen-tablet.jpg");
+    background-size: cover;
+    background-position: center;
+
+    h2 {
+      font-size: 50px;
+      line-height: 61px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+    }
+
+    .main-screen__container {
+      width: 100%;
+      max-width: 1023px;
+      padding: 0 45px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-screen {
+    padding: 185px 0;
+    background-image: url("../img/jpg/main-screen-tablet.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .main-screen__menu-open {
+      margin-left: 70px;
+    }
+
+    h2 {
+      font-size: 36px;
+      line-height: 45px;
+      margin-bottom: 25px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 22px;
+    }
+
+    .main-screen__container {
+      padding: 0 15px;
+    }
+  }
+}

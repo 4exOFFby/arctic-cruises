@@ -1,5 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
+import {headerMenuHandler, buttonOpen, headerMenu} from './modules/header-menu';
 
 // ---------------------------------
 
@@ -11,6 +12,10 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
 
   // Modules
+  headerMenu.classList.remove('main-navigation--no-js');
+  if (buttonOpen) {
+    buttonOpen.addEventListener('click', headerMenuHandler);
+  }
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
