@@ -1,0 +1,56 @@
+.features-card {
+  width: 100%;
+  max-width: 560px;
+  background-color: #f9fbfd;
+  padding: 87px 42px 50px 30px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-position: 30px 30px;
+
+  h3 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: #011c40;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  p {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #011c40;
+    margin: 0;
+  }
+}
+
+.features-card--compact {
+  background-image: url("../img/svg/features-icon-1.svg");
+}
+
+.features-card--all {
+  background-image: url("../img/svg/features-icon-2.svg");
+}
+
+.features-card--zodiack {
+  background-image: url("../img/svg/features-icon-3.svg");
+}
+
+@media (min-width: 1024px) and (max-width: 1360px) {
+  .features-card {
+    width: 100%;
+    max-width: 560px;
+  }
+}
+
+@media (max-width: 767px) {
+  .features-card {
+    width: 100%;
+    max-width: 750px;
+  }
+}
