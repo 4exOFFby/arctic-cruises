@@ -286,16 +286,18 @@
       <!-- Booking form -->
       <section class="booking">
         <div class="container booking__container">
-          <h2>Раннее бронирование</h2>
-          <p>
-            Забронируйте тур за 3-6 месяцев
-            до даты выезда и сэкономьте до 50%
-          </p>
+          <div class="booking__text-wrapper">
+            <h2>Раннее бронирование</h2>
+            <p>
+              Забронируйте тур за 3-6 месяцев
+              до даты выезда и сэкономьте до 50%
+            </p>
+          </div>
           <form class="booking__form booking-form" method="post" action="https://echo.htmlacademy.ru">
             <h3>Оставьте заявку и мы свяжемся с вами в ближайшее время</h3>
             <input type="text" name="user-name" id="user-name" minlength="2" placeholder="Имя" required>
             <label for="user-name" class="visually-hidden">Введите Ваше имя</label>
-            <input type="number" name="user-number" id="user-number" minlength="18" placeholder="Телефон" required>
+            <input type="tel" name="user-number" id="user-number" minlength="18" placeholder="Телефон" required>
             <label for="user-number" class="visually-hidden">Введите Ваш номер телефона</label>
             <input type="email" name="user-email" id="user-email" minlength="7" placeholder="Email" required>
             <label for="user-email" class="visually-hidden">Введите Вашу электронную почту</label>
