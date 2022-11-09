@@ -4,7 +4,7 @@
   background-image: url("../img/jpg/booking-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -10px;
 
   h2 {
     font-family: "Montserrat", "Arial", sans-serif;
@@ -15,9 +15,8 @@
     color: #011c40;
     margin: 0;
     margin-bottom: 30px;
-    grid-column: 1/2;
-    grid-row: 1/2;
     margin-top: 178px;
+    display: block;
   }
 
   p {
@@ -29,22 +28,23 @@
     color: #011c40;
     margin: 0;
     display: block;
-    max-width: 360px;
-    grid-column: 1/2;
+    width: 352px;
   }
 
   .booking__container {
     padding: 0 163px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
   }
 }
 
-.booking__form {
-  grid-column: 2/3;
-  grid-row: 1/3;
+@media (min-width: 1222px) and (max-width: 1365px) {
+  .booking {
+    h2 {
+      width: 440px;
+    }
+  }
 }
-
 
 @media (max-width: 1023px) {
   .booking {
@@ -58,8 +58,9 @@
 
     p {
       margin-bottom: 60px;
-      display: inline;
       text-align: center;
+      display: block;
+      max-width: 355px;
     }
 
     .booking__container {
@@ -68,6 +69,12 @@
       align-items: center;
       padding: 0;
     }
+  }
+
+  .booking__text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -84,6 +91,8 @@
 
     p {
       margin-bottom: 40px;
+      display: inline;
+      width: auto;
     }
 
     .booking__container {
