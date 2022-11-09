@@ -1,0 +1,48 @@
+.features {
+  border-color: #d6dbdb;
+  background-image: url("../img/jpg/features-background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 120px 0;
+
+  h2 {
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    text-align: center;
+    color: #011c40;
+    margin: 0;
+    margin-bottom: 60px;
+  }
+
+  .features__container {
+    padding: 0 103px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .features {
+    padding: 100px 0;
+
+    .features__container {
+      padding: 0 45px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .features {
+    padding: 65px 0;
+
+    h2 {
+      margin-bottom: 40px;
+    }
+
+    .features__container {
+      padding: 0 15px;
+    }
+  }
+}
