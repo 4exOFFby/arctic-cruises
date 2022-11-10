@@ -1,7 +1,7 @@
 import gulp from 'gulp';
 import browserSync from 'browser-sync';
 import del from 'del';
-import {compileStyles, compliteLeafletStyle} from './gulp/compileStyles.mjs';
+import style from './gulp/compileStyles.mjs';
 import { copy, copyImages, copySvg } from './gulp/copyAssets.mjs';
 import js from './gulp/compileScripts.mjs';
 import {optimizeSvg, sprite, createWebp, optimizePng, optimizeJpg} from './gulp/optimizeImages.mjs';
@@ -39,8 +39,8 @@ const refresh = (done) => {
   done();
 };
 
-const build = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compliteLeafletStyle, js, optimizePng, optimizeJpg, optimizeSvg));
-const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compliteLeafletStyle, js, optimizePng, optimizeJpg, optimizeSvg), syncServer);
-const start = gulp.series(clean, copy, sprite, gulp.parallel(compileStyles, compliteLeafletStyle, js), syncServer);
+const build = gulp.series(clean, copy, sprite, gulp.parallel(style, js, optimizePng, optimizeJpg, optimizeSvg));
+const dev = gulp.series(clean, copy, sprite, gulp.parallel(style, js, optimizePng, optimizeJpg, optimizeSvg), syncServer);
+const start = gulp.series(clean, copy, sprite, gulp.parallel(style, js), syncServer);
 
 export { createWebp as webp, build, start, dev};

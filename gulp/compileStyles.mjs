@@ -21,13 +21,6 @@ const compileStyles = () =>
       .pipe(rename('style.min.css'))
       .pipe(gulp.dest('build/css', {sourcemaps: '.'}));
 
-const compliteLeafletStyle = () =>
-  gulp.src('source/css/leaflet.css')
-      .pipe(gulp.dest('build/css'))
-      .pipe(csso())
-      .pipe(rename('leaflet.min.css'))
-      .pipe(gulp.dest('build/css', {sourcemaps: '.'}));
-
-export {compileStyles, compliteLeafletStyle};
+export default compileStyles;
 
 

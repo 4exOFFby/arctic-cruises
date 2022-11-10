@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {headerMenuHandler, buttonOpen, headerMenu} from './modules/header-menu';
-import {mainPinMarker, map} from './modules/map';
+// import {mainPinMarker, map} from './modules/map';
 
 // ---------------------------------
 
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
     buttonOpen.addEventListener('click', headerMenuHandler);
   }
 
-  mainPinMarker.addTo(map);
+  // mainPinMarker.addTo(map);
 
   // ---------------------------------
 
