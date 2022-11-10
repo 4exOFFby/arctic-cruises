@@ -1,8 +1,24 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {headerMenuHandler, buttonOpen, headerMenu} from './modules/header-menu';
+// import {mainPinMarker, map} from './modules/map.js';
 
 // ---------------------------------
+
+const mapSection = document.querySelector('.contacts');
+
+mapSection.classList.remove('contacts--no-js');
+
+const map = L.map('map')
+  .setView({
+    lat: 59.92749,
+    lng: 30.31127,
+  }, 10);
+
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  },
+).addTo(map);
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -16,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
   if (buttonOpen) {
     buttonOpen.addEventListener('click', headerMenuHandler);
   }
+
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
