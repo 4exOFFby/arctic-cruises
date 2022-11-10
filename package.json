@@ -60,5 +60,9 @@
   },
   "engines": {
     "node": ">=16.15.1"
+  },
+  "dependencies": {
+    "@googlemaps/google-maps-services-js": "^3.3.16",
+    "@googlemaps/js-api-loader": "^1.15.1"
   }
 }
