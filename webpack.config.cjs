@@ -12,6 +12,7 @@ module.exports = {
   entry: {
     main: './js/main.js',
     vendor: './js/vendor.js',
+    leaflet: './js/modules/leaflet.js',
   },
   devtool: isDev ? 'source-map' : false,
   output: {
