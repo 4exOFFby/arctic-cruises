@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {headerMenuHandler, buttonOpen, headerMenu} from './modules/header-menu';
-// import {mainPinMarker, map} from './modules/map';
+import {navigationLinks, featuresSection, productsSection, bookingSection, contactsSection, scrollHandler} from './modules/scroll-to';
 
 // ---------------------------------
 
@@ -17,7 +17,27 @@ window.addEventListener('DOMContentLoaded', () => {
     buttonOpen.addEventListener('click', headerMenuHandler);
   }
 
-  // mainPinMarker.addTo(map);
+  if (navigationLinks.length > 0) {
+    for (let link of navigationLinks) {
+      link.addEventListener('click', (evt) => {
+        evt.preventDefault();
+        switch (evt.target.ariaLabel) {
+          case 'features':
+            scrollHandler(featuresSection);
+            break;
+          case 'products':
+            scrollHandler(productsSection);
+            break;
+          case 'booking':
+            scrollHandler(bookingSection);
+            break;
+          case 'contacts':
+            scrollHandler(contactsSection);
+            break;
+        }
+      });
+    }
+  }
 
   // ---------------------------------
 
