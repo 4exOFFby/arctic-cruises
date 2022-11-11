@@ -793,10 +793,14 @@ button,
 
 .main-header {
   background-color: transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
+  z-index: 1;
   width: 100%;
+  margin-bottom: -108px;
+}
+
+.main-header.main-header--no-js {
+  margin-bottom: 0;
 }
 
 .main-navigation {
@@ -854,6 +858,10 @@ button,
   font-size: 16px;
   line-height: 20px;
   color: #f7fafc;
+}
+
+.site-navigation__link:hover {
+  opacity: 0.8;
 }
 
 .main-screen {
@@ -1011,6 +1019,10 @@ button,
   justify-content: center;
   width: 20px;
   height: 20px;
+}
+
+.social-list__link:hover {
+  opacity: 0.7;
 }
 
 .social-list__icon {
@@ -1238,6 +1250,10 @@ button,
   text-align: center;
 }
 
+.product-card__link:hover {
+  background-color: rgba(249, 251, 253, 0.8);
+}
+
 .product-card__image {
   overflow: hidden;
   position: absolute;
@@ -1263,15 +1279,24 @@ button,
   margin-bottom: 24px;
 }
 
-.product-card:hover .product-card__info {
+.product-card:hover,
+.product-card:focus-within {
+  -webkit-box-shadow: 0 0 20px rgb(48, 162, 227);
+  box-shadow: 0 0 20px rgb(48, 162, 227);
+}
+
+.product-card:hover .product-card__info,
+.product-card:focus-within .product-card__info {
   padding-top: 28px;
 }
 
-.product-card:hover .product-card__image {
+.product-card:hover .product-card__image,
+.product-card:focus-within .product-card__image {
   z-index: -1;
 }
 
-.product-card:hover h3 {
+.product-card:hover h3,
+.product-card:focus-within h3 {
   position: static;
 }
 
@@ -1363,6 +1388,10 @@ button,
   padding: 11px 16px;
 }
 
+.booking-form input:not([name=user-approval]):focus {
+  background-color: #dadde1;
+}
+
 .booking-form input::-webkit-input-placeholder {
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -1421,6 +1450,11 @@ button,
   padding-left: 22px;
 }
 
+.booking-form label:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
 .booking-form label::before {
   content: "";
   width: 18px;
@@ -1454,6 +1488,11 @@ button,
   border: none;
   margin-top: 35px;
   cursor: pointer;
+}
+
+.booking-form button:hover,
+.booking-form button:focus {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 
 .booking-form__field {
@@ -1531,6 +1570,10 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #011c40;
+}
+
+.contacts-list__link:hover {
+  color: rgba(1, 28, 64, 0.7);
 }
 
 .contacts-list__item {
@@ -1914,11 +1957,11 @@ button,
     cursor: pointer;
   }
 
-  .navigation-menu__icon--closed {
+  .main-navigation__icon--closed {
     color: #f9fbfd;
   }
 
-  .navigation-menu__icon--opened {
+  .main-navigation__icon--opened {
     display: none;
   }
 
@@ -1960,14 +2003,14 @@ button,
     min-height: 538px;
   }
 
-  .main-navigation--menu-open .navigation-menu__icon--opened {
+  .main-navigation--menu-open .main-navigation__icon--opened {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     color: #f9fbfd;
   }
 
-  .main-navigation--menu-open .navigation-menu__icon--closed {
+  .main-navigation--menu-open .main-navigation__icon--closed {
     display: none;
   }
 
@@ -1988,6 +2031,16 @@ button,
 
   .main-navigation--no-js {
     position: static;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
     padding-top: 20px;
     background-color: #f9fbfd;
     width: 100%;
@@ -1999,6 +2052,10 @@ button,
     height: 22px;
   }
 
+  .main-navigation--no-js .main-navigation__logo-link {
+    margin-bottom: 40px;
+  }
+
   .main-navigation--no-js .main-navigation__list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2008,9 +2065,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     background-color: #f9fbfd;
-    position: absolute;
-    top: 70px;
-    left: 0;
+    position: static;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
@@ -2020,14 +2075,14 @@ button,
     min-height: 300px;
   }
 
-  .main-navigation--no-js .navigation-menu__icon--opened {
+  .main-navigation--no-js .main-navigation__icon--opened {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     color: #f9fbfd;
   }
 
-  .main-navigation--no-js .navigation-menu__icon--closed {
+  .main-navigation--no-js .main-navigation__icon--closed {
     display: none;
   }
 

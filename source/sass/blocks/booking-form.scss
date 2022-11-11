@@ -23,6 +23,10 @@
     height: 43px;
     margin-bottom: 20px;
     padding: 11px 16px;
+
+    &:focus {
+      background-color: #dadde1;
+    }
   }
 
   input::placeholder {
@@ -45,6 +49,11 @@
     line-height: 13px;
     color: #f9fbfd;
     padding-left: 22px;
+
+    &:hover {
+      opacity: 0.7;
+      cursor: pointer;
+    }
   }
 
   label::before {
@@ -80,6 +89,11 @@
     border: none;
     margin-top: 35px;
     cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: rgba(255, 255, 255, 0.8);
+    }
   }
 }
 
