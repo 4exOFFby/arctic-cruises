@@ -4,7 +4,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 283px 0;
+  padding: 270px 0 286px 0;
 
   @media (min-resolution: 2dppx) {
     .main-screen {
@@ -21,7 +21,7 @@
     color: #f9fbfd;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 12px;
   }
 
   p {
@@ -37,7 +37,7 @@
 
   .main-screen__container {
     max-width: 1300px;
-    padding: 0 150px;
+    padding: 0 165px;
   }
 }
 
