@@ -59,14 +59,14 @@
 
 @media (max-width: 1023px) {
   .about-as {
-    padding: 100px 0;
+    padding: 91px 0 93px 0;
 
     .about-as__container::before {
       width: 324px;
       height: 174px;
       background-size: contain;
       top: 10px;
-      right: 45px;
+      right: 50px;
     }
 
 
@@ -75,7 +75,8 @@
       line-height: 36px;
       display: block;
       width: 205px;
-      margin-bottom: 30px;
+      margin-bottom: 16px;
+      margin-top: 0;
     }
 
     p {

@@ -48,7 +48,11 @@
 
 @media (max-width: 1023px) {
   .contacts {
-    padding: 100px 0;
+    padding: 100px 0 97px 0;
+
+    p {
+      margin-bottom: 27px;
+    }
 
     .contacts__container {
       padding: 0 45px;
@@ -57,11 +61,16 @@
 
   .contacts__text-wrapper {
     max-width: 325px;
+    margin-top: 66px;
   }
 
   .contacts__map {
     width: 324px;
-    height: 335px;
+    height: 338px;
+
+    iframe {
+      height: 338px;
+    }
   }
 }
 

@@ -31,7 +31,12 @@
 
 @media (max-width: 1023px) {
   .features {
-    padding: 100px 0;
+    padding: 90px 0 100px 0;
+
+    h2 {
+      font-size: 26px;
+      line-height: 39px;
+    }
 
     .features__container {
       padding: 0 45px;

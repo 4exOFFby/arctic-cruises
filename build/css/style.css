@@ -808,7 +808,7 @@ button,
   display: grid;
   -ms-grid-columns: 150px 1fr;
   grid-template-columns: 150px 1fr;
-  padding: 35px 58px 35px 71px;
+  padding: 35px 55px 35px 71px;
 }
 
 .main-navigation__logo-link {
@@ -862,6 +862,10 @@ button,
 
 .site-navigation__link:hover {
   opacity: 0.8;
+}
+
+.site-navigation__item:not(:first-child) {
+  margin-left: 2px;
 }
 
 .main-screen {
@@ -963,8 +967,12 @@ button,
 
 .footer-navigation__list {
   margin: 0;
-  margin-left: 6px;
+  margin-left: 4px;
   margin-right: auto;
+}
+
+.footer-navigation__item:not(:last-child) {
+  margin-right: 0;
 }
 
 .footer-navigation__logo-link {
@@ -1111,6 +1119,7 @@ button,
 
 .features-card--all {
   background-image: url("../img/svg/features-icon-2.svg");
+  padding: 80px 49px 18px 30px;
 }
 
 .features-card--zodiack {
@@ -1590,6 +1599,10 @@ button,
   color: rgba(1, 28, 64, 0.7);
 }
 
+.contacts-list__link--adress br {
+  display: none;
+}
+
 .contacts-list__item {
   position: relative;
   padding-left: 28px;
@@ -1673,7 +1686,7 @@ button,
   .main-navigation {
     -ms-grid-columns: 100px 1fr;
     grid-template-columns: 100px 1fr;
-    padding: 35px 21px;
+    padding: 22px 10px 22px 21px;
   }
 
   .main-navigation__logo-link {
@@ -1690,10 +1703,15 @@ button,
   .site-navigation__link {
     font-size: 14px;
     line-height: 17px;
+    padding: 9px 12px;
+  }
+
+  .site-navigation__item:not(:first-child) {
+    margin-right: -2px;
   }
 
   .main-screen {
-    padding: 280px 0;
+    padding: 297px 0 275px 0;
     background-image: url("../img/jpg/main-screen-tablet.jpg");
     background-size: cover;
     background-position: center;
@@ -1717,7 +1735,7 @@ button,
   }
 
   .about-as {
-    padding: 100px 0;
+    padding: 91px 0 93px 0;
   }
 
   .about-as .about-as__container::before {
@@ -1725,7 +1743,7 @@ button,
     height: 174px;
     background-size: contain;
     top: 10px;
-    right: 45px;
+    right: 50px;
   }
 
   .about-as h2 {
@@ -1733,7 +1751,8 @@ button,
     line-height: 36px;
     display: block;
     width: 205px;
-    margin-bottom: 30px;
+    margin-bottom: 16px;
+    margin-top: 0;
   }
 
   .about-as p {
@@ -1747,6 +1766,10 @@ button,
     padding-left: 45px;
   }
 
+  .main-footer {
+    padding: 43px 0 42px 0;
+  }
+
   .main-footer .main-footer__container {
     padding: 0 43px;
   }
@@ -1754,15 +1777,15 @@ button,
   .footer-navigation {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 50px 1fr 98px;
-    grid-template-columns: 50px 1fr 98px;
+    -ms-grid-columns: 48px 1fr 93px;
+    grid-template-columns: 48px 1fr 93px;
   }
 
   .footer-navigation .footer-navigation__link {
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    padding: 8px 14px;
+    padding: 8px 12px;
   }
 
   .footer-navigation__logo-link {
@@ -1787,11 +1810,20 @@ button,
   }
 
   .social-list {
-    width: 92px;
+    width: 100px;
+  }
+
+  .social-list__item:not(:last-child) {
+    margin-right: 21px;
   }
 
   .features {
-    padding: 100px 0;
+    padding: 90px 0 100px 0;
+  }
+
+  .features h2 {
+    font-size: 26px;
+    line-height: 39px;
   }
 
   .features .features__container {
@@ -1805,8 +1837,38 @@ button,
     row-gap: 30px;
   }
 
+  .features-card {
+    padding: 70px 16px 20px 20px;
+    background-position: 20px 26px;
+  }
+
+  .features-card h3 {
+    margin-bottom: 6px;
+  }
+
+  .features-card--compact {
+    background-size: 21px 26px;
+  }
+
+  .features-card--all {
+    background-size: 27px 26px;
+  }
+
+  .features-card--zodiack {
+    background-size: 36px 26px;
+  }
+
+  .features-card--zodiack h3 {
+    margin-bottom: 16px;
+  }
+
   .products {
-    padding: 100px 0;
+    padding: 90px 0 92px 0;
+  }
+
+  .products h2 {
+    font-size: 26px;
+    line-height: 39px;
   }
 
   .products .products__container {
@@ -1816,11 +1878,13 @@ button,
   .products-list {
     -ms-grid-columns: (1fr)[2];
     grid-template-columns: repeat(2, 1fr);
+    row-gap: 29px;
   }
 
   .product-card {
     width: 100%;
     max-width: 450px;
+    min-height: 387px;
   }
 
   .product-card__image {
@@ -1837,21 +1901,40 @@ button,
   .product-card__info {
     width: 100%;
     max-width: 450px;
+    padding: 66px 25px 35px 34px;
+  }
+
+  .product-card__info h3 {
+    bottom: 16px;
+    left: 35px;
+  }
+
+  .product-card:hover .product-card__info,
+  .product-card:focus-within .product-card__info {
+    padding-top: 28px;
+  }
+
+  .product-card__link {
+    width: 240px;
+    margin-left: 0;
   }
 
   .booking {
+    background-size: cover;
     background-position: center;
-    padding: 100px 0;
+    padding: 103px 0 100px 0;
   }
 
   .booking h2 {
-    margin-bottom: 25px;
+    margin-bottom: 5px;
     margin-top: 0;
     text-align: center;
+    font-size: 34px;
+    line-height: 51px;
   }
 
   .booking p {
-    margin-bottom: 60px;
+    margin-bottom: 52px;
     text-align: center;
     display: block;
     max-width: 355px;
@@ -1886,11 +1969,19 @@ button,
   }
 
   .booking-form {
-    max-width: 600px;
+    max-width: 403px;
+  }
+
+  .booking-form label::before {
+    left: 0;
   }
 
   .contacts {
-    padding: 100px 0;
+    padding: 100px 0 97px 0;
+  }
+
+  .contacts p {
+    margin-bottom: 27px;
   }
 
   .contacts .contacts__container {
@@ -1899,15 +1990,28 @@ button,
 
   .contacts__text-wrapper {
     max-width: 325px;
+    margin-top: 66px;
   }
 
   .contacts__map {
     width: 324px;
-    height: 335px;
+    height: 338px;
+  }
+
+  .contacts__map iframe {
+    height: 338px;
   }
 
   .contacts-list__item--phone::before {
-    top: 5px;
+    top: -1px;
+  }
+
+  .contacts-list__item--adress::before {
+    top: 4px;
+  }
+
+  .contacts-list__link--adress br {
+    display: block;
   }
 }
 
@@ -2434,6 +2538,7 @@ button,
   .features-card {
     width: 100%;
     max-width: 560px;
+    background-size: 22px 22px;
   }
 }
 

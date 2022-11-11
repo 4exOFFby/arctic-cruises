@@ -18,6 +18,12 @@
   }
 }
 
+.contacts-list__link--adress {
+  br {
+    display: none;
+  }
+}
+
 .contacts-list__item {
   position: relative;
   padding-left: 28px;
@@ -54,6 +60,16 @@
 
 @media (max-width: 1023px) {
   .contacts-list__item--phone::before {
-    top: 5px;
+    top: -1px;
+  }
+
+  .contacts-list__item--adress::before {
+    top: 4px;
+  }
+
+  .contacts-list__link--adress {
+    br {
+      display: block;
+    }
   }
 }

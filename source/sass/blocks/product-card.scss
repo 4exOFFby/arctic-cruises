@@ -122,6 +122,7 @@
   .product-card {
     width: 100%;
     max-width: 450px;
+    min-height: 387px;
   }
 
   .product-card__image {
@@ -138,6 +139,24 @@
   .product-card__info {
     width: 100%;
     max-width: 450px;
+    padding: 66px 25px 35px 34px;
+
+    h3 {
+      bottom: 16px;
+      left: 35px;
+    }
+  }
+
+  .product-card:hover,
+  .product-card:focus-within {
+    .product-card__info {
+      padding-top: 28px;
+    }
+  }
+
+  .product-card__link {
+    width: 240px;
+    margin-left: 0;
   }
 }
 
