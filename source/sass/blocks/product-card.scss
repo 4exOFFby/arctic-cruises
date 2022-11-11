@@ -72,6 +72,10 @@
   margin-top: auto;
   padding: 14px 14px;
   text-align: center;
+
+  &:hover {
+    background-color: rgb(249, 251, 253, 0.8);
+  }
 }
 
 .product-card__image {
@@ -97,7 +101,10 @@
   margin-bottom: 24px;
 }
 
-.product-card:hover {
+.product-card:hover,
+.product-card:focus-within {
+  box-shadow: 0 0 20px rgba(48, 162, 227, 1);
+
   .product-card__info {
     padding-top: 28px;
   }

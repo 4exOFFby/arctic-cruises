@@ -7,7 +7,7 @@ import js from './gulp/compileScripts.mjs';
 import {optimizeSvg, sprite, createWebp, optimizePng, optimizeJpg} from './gulp/optimizeImages.mjs';
 
 const server = browserSync.create();
-const streamStyles = () => styles().pipe(server.stream());
+const streamStyles = () => style().pipe(server.stream());
 
 const clean = () => del('build');
 

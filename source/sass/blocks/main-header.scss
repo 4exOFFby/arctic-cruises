@@ -1,7 +1,11 @@
 .main-header {
   background-color: transparent;
-  position: absolute;
-  top: 0;
-  right: 0;
+  position: relative;
+  z-index: 1;
   width: 100%;
+  margin-bottom: -108px;
+}
+
+.main-header.main-header--no-js {
+  margin-bottom: 0;
 }

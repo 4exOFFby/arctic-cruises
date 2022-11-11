@@ -69,11 +69,11 @@
     cursor: pointer;
   }
 
-  .navigation-menu__icon--closed {
+  .main-navigation__icon--closed {
     color: #f9fbfd;
   }
 
-  .navigation-menu__icon--opened {
+  .main-navigation__icon--opened {
     display: none;
   }
 
@@ -108,12 +108,12 @@
       min-height: 538px;
     }
 
-    .navigation-menu__icon--opened {
+    .main-navigation__icon--opened {
       display: flex;
       color: #f9fbfd;
     }
 
-    .navigation-menu__icon--closed {
+    .main-navigation__icon--closed {
       display: none;
     }
 
@@ -132,6 +132,9 @@
   // Не подгрузился Js
   .main-navigation--no-js {
     position: static;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     padding-top: 20px;
     background-color: #f9fbfd;
     width: 100%;
@@ -142,13 +145,15 @@
       height: 22px;
     }
 
+    .main-navigation__logo-link {
+      margin-bottom: 40px;
+    }
+
     .main-navigation__list {
       display: flex;
       flex-direction: column;
       background-color: #f9fbfd;
-      position: absolute;
-      top: 70px;
-      left: 0;
+      position: static;
       align-items: flex-start;
       width: 100%;
       padding-left: 10px;
@@ -156,12 +161,12 @@
       min-height: 300px;
     }
 
-    .navigation-menu__icon--opened {
+    .main-navigation__icon--opened {
       display: flex;
       color: #f9fbfd;
     }
 
-    .navigation-menu__icon--closed {
+    .main-navigation__icon--closed {
       display: none;
     }
 
