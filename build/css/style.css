@@ -1546,6 +1546,12 @@ button,
   height: 306px;
 }
 
+.contacts__map iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+
 .contacts__text-wrapper {
   max-width: 500px;
 }
@@ -1888,7 +1894,7 @@ button,
   }
 
   .contacts__map {
-    width: 324px;
+    max-width: 324px;
     height: 335px;
   }
 
