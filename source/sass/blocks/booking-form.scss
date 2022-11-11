@@ -113,7 +113,11 @@
 
 @media (max-width: 1023px) {
   .booking-form {
-    max-width: 600px;
+    max-width: 403px;
+
+    label::before {
+      left: 0;
+    }
   }
 }
 

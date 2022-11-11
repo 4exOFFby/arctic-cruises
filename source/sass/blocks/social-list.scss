@@ -46,6 +46,10 @@
   }
 
   .social-list {
-    width: 92px;
+    width: 100px;
+  }
+
+  .social-list__item:not(:last-child) {
+    margin-right: 21px;
   }
 }

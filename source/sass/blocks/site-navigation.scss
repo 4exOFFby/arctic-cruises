@@ -24,10 +24,19 @@
   }
 }
 
+.site-navigation__item:not(:first-child) {
+  margin-left: 2px;
+}
+
 @media (max-width: 1023px) {
   .site-navigation__link {
     font-size: 14px;
     line-height: 17px;
+    padding: 9px 12px;
+  }
+
+  .site-navigation__item:not(:first-child) {
+    margin-right: -2px;
   }
 }
 

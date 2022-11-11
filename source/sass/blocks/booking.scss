@@ -78,17 +78,20 @@
 
 @media (max-width: 1023px) {
   .booking {
+    background-size: cover;
     background-position: center;
-    padding: 100px 0;
+    padding: 103px 0 100px 0;
 
     h2 {
-      margin-bottom: 25px;
+      margin-bottom: 5px;
       margin-top: 0;
       text-align: center;
+      font-size: 34px;
+      line-height: 51px;
     }
 
     p {
-      margin-bottom: 60px;
+      margin-bottom: 52px;
       text-align: center;
       display: block;
       max-width: 355px;

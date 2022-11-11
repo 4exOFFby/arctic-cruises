@@ -1,7 +1,7 @@
 .main-navigation {
   display: grid;
   grid-template-columns: 150px 1fr;
-  padding: 35px 58px 35px 71px;
+  padding: 35px 55px 35px 71px;
 }
 
 .main-navigation__logo-link {
@@ -23,7 +23,7 @@
 @media (max-width: 1023px) {
   .main-navigation {
     grid-template-columns: 100px 1fr;
-    padding: 35px 21px;
+    padding: 22px 10px 22px 21px;
   }
 
   .main-navigation__logo-link {
