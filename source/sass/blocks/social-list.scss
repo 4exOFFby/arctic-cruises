@@ -4,17 +4,18 @@
   list-style-type: none;
   display: flex;
   align-items: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  width: 110px;
+  width: 120px;
 }
 
 .social-list__item {
-  margin-top: 8px;
+  margin-top: 11px;
   margin-bottom: 8px;
 }
 
 .social-list__item:not(:last-child) {
-  margin-right: 22px;
+  margin-right: 24px;
 }
 
 .social-list__link {

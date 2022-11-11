@@ -808,7 +808,7 @@ button,
   display: grid;
   -ms-grid-columns: 150px 1fr;
   grid-template-columns: 150px 1fr;
-  padding: 35px 71px;
+  padding: 35px 58px 35px 71px;
 }
 
 .main-navigation__logo-link {
@@ -851,7 +851,7 @@ button,
 .site-navigation__link {
   display: inline-block;
   vertical-align: middle;
-  padding: 8px 16px;
+  padding: 8px 16px 8px 16px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -870,7 +870,7 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 283px 0;
+  padding: 270px 0 286px 0;
 }
 
 .main-screen h2 {
@@ -882,7 +882,7 @@ button,
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 12px;
 }
 
 .main-screen p {
@@ -898,11 +898,11 @@ button,
 
 .main-screen .main-screen__container {
   max-width: 1300px;
-  padding: 0 150px;
+  padding: 0 165px;
 }
 
 .about-as {
-  padding: 120px 0 145px 0;
+  padding: 112px 0 205px 0;
 }
 
 .about-as h2 {
@@ -913,7 +913,8 @@ button,
   line-height: 42px;
   color: #011c40;
   margin: 0;
-  margin-bottom: 40px;
+  margin-top: 56px;
+  margin-bottom: 23px;
 }
 
 .about-as p {
@@ -938,8 +939,8 @@ button,
   width: 560px;
   height: 301px;
   position: absolute;
-  top: -10px;
-  right: 90px;
+  top: -56px;
+  right: 103px;
   background-image: url("../img/jpg/about-as-pinguins.jpg");
   background-repeat: no-repeat;
 }
@@ -950,7 +951,7 @@ button,
 }
 
 .main-footer .main-footer__container {
-  padding: 0 88px;
+  padding: 0 104px 0 103px;
 }
 
 .footer-navigation {
@@ -962,6 +963,7 @@ button,
 
 .footer-navigation__list {
   margin: 0;
+  margin-left: 6px;
   margin-right: auto;
 }
 
@@ -993,18 +995,21 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 110px;
+  width: 120px;
 }
 
 .social-list__item {
-  margin-top: 8px;
+  margin-top: 11px;
   margin-bottom: 8px;
 }
 
 .social-list__item:not(:last-child) {
-  margin-right: 22px;
+  margin-right: 24px;
 }
 
 .social-list__link {
@@ -1035,7 +1040,7 @@ button,
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 120px 0;
+  padding: 110px 0 120px 0;
 }
 
 .features h2 {
@@ -1047,7 +1052,7 @@ button,
   text-align: center;
   color: #011c40;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 49px;
 }
 
 .features .features__container {
@@ -1072,7 +1077,7 @@ button,
   width: 100%;
   max-width: 560px;
   background-color: #f9fbfd;
-  padding: 87px 42px 50px 30px;
+  padding: 81px 30px 45px 30px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-repeat: no-repeat;
@@ -1087,7 +1092,7 @@ button,
   line-height: 27px;
   color: #011c40;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 8px;
 }
 
 .features-card p {
@@ -1113,7 +1118,7 @@ button,
 }
 
 .products {
-  padding: 95px 0 120px 0;
+  padding: 86px 0 120px 0;
 }
 
 .products h2 {
@@ -1125,7 +1130,7 @@ button,
   color: #011c40;
   text-align: center;
   margin: 0;
-  margin-bottom: 60px;
+  margin-bottom: 48px;
 }
 
 .products .products__container {
@@ -1191,7 +1196,7 @@ button,
 
 .product-card__info h3 {
   position: absolute;
-  bottom: 5px;
+  bottom: 11px;
   left: 30px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-style: normal;
@@ -1246,7 +1251,7 @@ button,
   line-height: 21px;
   color: #011c40;
   margin-top: auto;
-  padding: 14px 14px;
+  padding: 9px;
   text-align: center;
 }
 
@@ -1276,7 +1281,7 @@ button,
 }
 
 .product-card__info-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: -3px;
 }
 
 .product-card:hover,
@@ -1301,12 +1306,12 @@ button,
 }
 
 .booking {
-  padding: 50px 0;
+  padding: 50px 0 49px 0;
   background-color: #61bad8;
   background-image: url("../img/jpg/booking-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center -26px;
 }
 
 .booking h2 {
@@ -1317,8 +1322,7 @@ button,
   line-height: 60px;
   color: #011c40;
   margin: 0;
-  margin-bottom: 30px;
-  margin-top: 48px;
+  margin-bottom: 10px;
   display: block;
   width: 493px;
 }
@@ -1350,6 +1354,7 @@ button,
 
 .booking__text-wrapper {
   width: 493px;
+  margin-top: -7px;
 }
 
 .booking-form {
@@ -1367,7 +1372,7 @@ button,
   background: #011c40;
   -webkit-box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
   box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
-  padding: 50px;
+  padding: 43px 50px 50px 50px;
 }
 
 .booking-form h3 {
@@ -1378,14 +1383,15 @@ button,
   line-height: 27px;
   color: #f9fbfd;
   margin: 0;
-  margin-bottom: 35px;
+  margin-bottom: 27px;
 }
 
 .booking-form input:not([name=user-approval]) {
   width: 100%;
-  height: 43px;
+  height: 44px;
   margin-bottom: 20px;
   padding: 11px 16px;
+  border: none;
 }
 
 .booking-form input:not([name=user-approval]):focus {
@@ -1486,7 +1492,7 @@ button,
   line-height: 21px;
   color: #011c40;
   border: none;
-  margin-top: 35px;
+  margin-top: 32px;
   cursor: pointer;
 }
 
@@ -1506,6 +1512,7 @@ button,
   -ms-flex-pack: start;
   justify-content: flex-start;
   width: 100%;
+  margin-top: 4px;
 }
 
 .booking-form__field:focus-within {
@@ -1514,7 +1521,7 @@ button,
 }
 
 .contacts {
-  padding: 120px 0;
+  padding: 120px 0 121px 0;
 }
 
 .contacts p {
@@ -1525,7 +1532,7 @@ button,
   line-height: 27px;
   color: #011c40;
   margin: 0;
-  margin-bottom: 45px;
+  margin-bottom: 31px;
 }
 
 .contacts .contacts__container {
@@ -1536,9 +1543,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
 }
 
 .contacts__map {
@@ -1548,12 +1555,13 @@ button,
 
 .contacts__map iframe {
   width: 100%;
-  height: 300px;
+  height: 306px;
   border: none;
 }
 
 .contacts__text-wrapper {
   max-width: 500px;
+  margin-top: 76px;
 }
 
 .map {
@@ -1588,7 +1596,7 @@ button,
 }
 
 .contacts-list__item:not(:last-child) {
-  margin-bottom: 33px;
+  margin-bottom: 22px;
 }
 
 .contacts-list__item::before {
@@ -2379,7 +2387,7 @@ button,
 
   .contacts__text-wrapper {
     margin-bottom: 43px;
-    max-width: 100%;
+    max-width: 90%;
   }
 }
 

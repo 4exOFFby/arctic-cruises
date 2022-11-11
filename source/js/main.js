@@ -21,19 +21,18 @@ window.addEventListener('DOMContentLoaded', () => {
   if (navigationLinks.length > 0) {
     for (let link of navigationLinks) {
       link.addEventListener('click', (evt) => {
-        evt.preventDefault();
         switch (evt.target.ariaLabel) {
           case 'features':
-            scrollHandler(featuresSection);
+            scrollHandler(evt, featuresSection);
             break;
           case 'products':
-            scrollHandler(productsSection);
+            scrollHandler(evt, productsSection);
             break;
           case 'booking':
-            scrollHandler(bookingSection);
+            scrollHandler(evt, bookingSection);
             break;
           case 'contacts':
-            scrollHandler(contactsSection);
+            scrollHandler(evt, contactsSection);
             break;
         }
       });

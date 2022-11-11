@@ -20,7 +20,7 @@
 
   h3 {
     position: absolute;
-    bottom: 5px;
+    bottom: 11px;
     left: 30px;
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -70,7 +70,7 @@
   line-height: 21px;
   color: #011c40;
   margin-top: auto;
-  padding: 14px 14px;
+  padding: 9px;
   text-align: center;
 
   &:hover {
@@ -98,7 +98,7 @@
 }
 
 .product-card__info-wrapper {
-  margin-bottom: 24px;
+  margin-bottom: -3px;
 }
 
 .product-card:hover,
