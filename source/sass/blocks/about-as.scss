@@ -1,12 +1,6 @@
 .about-as {
   padding: 120px 0 145px 0;
 
-  @media (min-resolution: 2dppx) {
-    .about-as {
-      background-image: url("../img/jpg/about-as-pinguins-retina.jpg");
-    }
-  }
-
   h2 {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -44,6 +38,12 @@
     right: 90px;
     background-image: url("../img/jpg/about-as-pinguins.jpg");
     background-repeat: no-repeat;
+
+    @media (min-resolution: 2dppx) {
+      .about-as__container::before {
+        background-image: url("../img/jpg/about-as-pinguins-retina.jpg");
+      }
+    }
   }
 }
 

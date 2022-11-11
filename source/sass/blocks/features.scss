@@ -6,6 +6,12 @@
   background-size: cover;
   padding: 120px 0;
 
+  @media (min-resolution: 2dppx) {
+    .features {
+      background-image: url("../img/jpg/features-background-retina.jpg");
+    }
+  }
+
   h2 {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
