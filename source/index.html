@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Каталог и бронирование Арктических круизов">
+    <link rel="preload" as="font" href="./fonts/montserrat-bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-bold.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-medium.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-medium.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-regular.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-regular.woff" type="font/woff" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-semi-bold.woff2" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" as="font" href="./fonts/montserrat-semi-bold.woff" type="font/woff" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Арктические круизы</title>
   </head>
@@ -54,6 +62,7 @@
     </header>
     <main>
       <h1 class="visually-hidden">Сервис подбора и бронирования Арктических круизов</h1>
+
       <!-- Main screen -->
       <section class="main-screen">
         <div class="container main-screen__container">
@@ -126,7 +135,10 @@
                   <a class="product-card__link" href="#" target="_blank">Забронировать</a>
                 </div>
                 <div class="product-card__image">
-                  <img src="./img/jpg/product-card-1.jpg" width="386" height="557" alt="Заснеженный пейзаж">
+                  <picture>
+                    <source type="image/webp" srcset="./img/jpg/product-card-1.webp 1x, ./img/jpg/product-card-1-retina.webp 2x">
+                    <img src="./img/jpg/product-card-1.jpg" srcset="./img/jpg/product-card-1-retina.jpg 2x" width="386" height="557" alt="Заснеженный пейзаж.">
+                  </picture>
                 </div>
               </article>
             </li>
@@ -147,7 +159,10 @@
                   <a class="product-card__link" href="#" target="_blank">Забронировать</a>
                 </div>
                 <div class="product-card__image">
-                  <img src="./img/jpg/product-card-2.jpg" width="386" height="557" alt="Заснеженный пейзаж">
+                  <picture>
+                    <source type="image/webp" srcset="./img/jpg/product-card-2.webp 1x, ./img/jpg/product-card-2-retina.webp 2x">
+                    <img src="./img/jpg/product-card-2.jpg" srcset="./img/jpg/product-card-2-retina.jpg 2x" width="386" height="557" alt="Заснеженный пейзаж и яхта.">
+                  </picture>
                 </div>
               </article>
             </li>
@@ -168,7 +183,10 @@
                   <a class="product-card__link" href="#" target="_blank">Забронировать</a>
                 </div>
                 <div class="product-card__image">
-                  <img src="./img/jpg/product-card-3.jpg" width="386" height="557" alt="Заснеженный пейзаж">
+                  <picture>
+                    <source type="image/webp" srcset="./img/jpg/product-card-3.webp 1x, ./img/jpg/product-card-3-retina.webp 2x">
+                    <img src="./img/jpg/product-card-3.jpg" srcset="./img/jpg/product-card-3-retina.jpg 2x" width="386" height="557" alt="Заснеженный айсберг.">
+                  </picture>
                 </div>
               </article>
             </li>
@@ -189,7 +207,10 @@
                   <a class="product-card__link" href="#" target="_blank">Забронировать</a>
                 </div>
                 <div class="product-card__image">
-                  <img src="./img/jpg/product-card-4.jpg" width="386" height="557" alt="Заснеженный пейзаж">
+                  <picture>
+                    <source type="image/webp" srcset="./img/jpg/product-card-4.webp 1x, ./img/jpg/product-card-4-retina.webp 2x">
+                    <img src="./img/jpg/product-card-4.jpg" srcset="./img/jpg/product-card-4-retina.jpg 2x" width="386" height="557" alt="Шикарный вид на горы.">
+                  </picture>
                 </div>
               </article>
             </li>
@@ -210,7 +231,10 @@
                   <a class="product-card__link" href="#" target="_blank">Забронировать</a>
                 </div>
                 <div class="product-card__image">
-                  <img src="./img/jpg/product-card-5.jpg" width="386" height="557" alt="Заснеженный пейзаж">
+                  <picture>
+                    <source type="image/webp" srcset="./img/jpg/product-card-5.webp 1x, ./img/jpg/product-card-5-retina.webp 2x">
+                    <img src="./img/jpg/product-card-5.jpg" srcset="./img/jpg/product-card-5-retina.jpg 2x" width="386" height="557" alt="Милые пингвины.">
+                  </picture>
                 </div>
               </article>
             </li>
@@ -231,7 +255,10 @@
                   <a class="product-card__link" href="#" target="_blank">Забронировать</a>
                 </div>
                 <div class="product-card__image">
-                  <img src="./img/jpg/product-card-6.jpg" width="386" height="557" alt="Заснеженный пейзаж">
+                  <picture>
+                    <source type="image/webp" srcset="./img/jpg/product-card-6.webp 1x, ./img/jpg/product-card-6-retina.webp 2x">
+                    <img src="./img/jpg/product-card-6.jpg" srcset="./img/jpg/product-card-6-retina.jpg 2x" width="386" height="557" alt="Красивый заснеженный берег.">
+                  </picture>
                 </div>
               </article>
             </li>
@@ -252,7 +279,10 @@
                   <a class="product-card__link" href="#" target="_blank">Забронировать</a>
                 </div>
                 <div class="product-card__image">
-                  <img src="./img/jpg/product-card-7.jpg" width="561" height="386" alt="Заснеженный пейзаж">
+                  <picture>
+                    <source type="image/webp" srcset="./img/jpg/product-card-7.webp 1x, ./img/jpg/product-card-7-retina.webp 2x">
+                    <img src="./img/jpg/product-card-7.jpg" srcset="./img/jpg/product-card-7-retina.jpg 2x" width="386" height="557" alt="Плывущая яхта.">
+                  </picture>
                 </div>
               </article>
             </li>
@@ -273,7 +303,10 @@
                   <a class="product-card__link" href="#" target="_blank">Забронировать</a>
                 </div>
                 <div class="product-card__image">
-                  <img src="./img/jpg/product-card-8.jpg" width="386" height="557" alt="Заснеженный пейзаж">
+                  <picture>
+                    <source type="image/webp" srcset="./img/jpg/product-card-8.webp 1x, ./img/jpg/product-card-8-retina.webp 2x">
+                    <img src="./img/jpg/product-card-8.jpg" srcset="./img/jpg/product-card-8-retina.jpg 2x" width="386" height="557" alt="Люди идущие в далеке.">
+                  </picture>
                 </div>
               </article>
             </li>
@@ -309,12 +342,11 @@
       </section>
 
       <!-- Contacts -->
-      <section class="contacts contacts--no-js" id="contacts">
+      <section class="contacts" id="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="container contacts__container">
           <div class="contacts__map map" id="map">
             <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06df419622fb26b5851fa554d5e452de64a16308420b20489bff4112639996fd&amp;width=100%25&amp;height=335&amp;lang=ru_RU&amp;scroll=false"></script>
-            <img class="contacts__no-js" src="./img/jpg/map.jpg" width="560" height="306" alt="Наше расположение на карте">
           </div>
           <div class="contacts__text-wrapper">
             <p>

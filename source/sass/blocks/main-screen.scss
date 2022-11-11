@@ -1,10 +1,16 @@
 .main-screen {
-  background-color: #2b2bc4;
+  background-color: #6f6fe5;
   background-image: url("../img/jpg/main-screen.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   padding: 283px 0;
+
+  @media (min-resolution: 2dppx) {
+    .main-screen {
+      background-image: url("../img/jpg/main-screen-retina.jpg");
+    }
+  }
 
   h2 {
     font-family: "Montserrat", "Arial", sans-serif;

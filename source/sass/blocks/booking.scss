@@ -6,6 +6,12 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media (min-resolution: 2dppx) {
+    .booking {
+      background-image: url("../img/jpg/booking-background-retina.jpg");
+    }
+  }
+
   h2 {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
