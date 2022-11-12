@@ -93,7 +93,7 @@
     width: 100%;
     max-width: 450px;
     object-fit: cover;
-    object-position: center -30px;
+    object-position: center;
   }
 }
 
@@ -164,6 +164,7 @@
   .product-card {
     width: 100%;
     max-width: 700px;
+    min-height: 386px;
   }
 
   .product-card__image {
@@ -180,10 +181,15 @@
   .product-card__info {
     width: 100%;
     max-width: 700px;
+    padding: 66px 25px 35px 24px;
+
+    h3 {
+      bottom: 8px;
+      left: 25px;
+    }
   }
 
   .product-card__link {
     width: 100%;
   }
 }
-

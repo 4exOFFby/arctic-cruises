@@ -43,7 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 11px 0;
   }
 
   .main-navigation__logo-link {
@@ -82,16 +82,24 @@
     position: absolute;
     top: 0;
     right: 0;
-    width: 90%;
+    width: 88%;
     min-width: 285px;
     max-width: 677px;
-    padding: 20px 15px;
+    padding: 11px 2px 21px 16px;
     background-color: #f9fbfd;
 
     .main-navigation__logo-icon {
       color: #011c40;
       width: 42px;
       height: 22px;
+    }
+
+    .main-navigation__item:not(:first-child) {
+      margin-left: 0;
+    }
+
+    .main-navigation__item:not(:last-child) {
+      margin-bottom: 8px;
     }
 
     .main-navigation__list {
@@ -103,9 +111,10 @@
       left: 0;
       align-items: flex-start;
       width: 100%;
-      padding-left: 10px;
+      padding-left: 14px;
       padding-bottom: 30px;
-      min-height: 538px;
+      padding-top: 5px;
+      min-height: 507px;
     }
 
     .main-navigation__icon--opened {
