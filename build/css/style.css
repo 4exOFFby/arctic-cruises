@@ -793,10 +793,10 @@ button,
 
 .main-header {
   background-color: transparent;
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: 1;
   width: 100%;
-  margin-bottom: -108px;
 }
 
 .main-header.main-header--no-js {
@@ -969,6 +969,14 @@ button,
   margin: 0;
   margin-left: 4px;
   margin-right: auto;
+  margin-top: 2px;
+  -ms-flex-item-align: start;
+  align-self: flex-start;
+}
+
+.footer-navigation__social {
+  -ms-flex-item-align: start;
+  align-self: flex-start;
 }
 
 .footer-navigation__item:not(:last-child) {
@@ -1000,15 +1008,15 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  width: 120px;
+  width: 132px;
 }
 
 .social-list__item {
@@ -1285,8 +1293,8 @@ button,
   max-width: 450px;
   -o-object-fit: cover;
   object-fit: cover;
-  -o-object-position: center -30px;
-  object-position: center -30px;
+  -o-object-position: center;
+  object-position: center;
 }
 
 .product-card__info-wrapper {
@@ -1348,6 +1356,10 @@ button,
   width: 352px;
 }
 
+.booking br {
+  display: none;
+}
+
 .booking .booking__container {
   padding: 0 163px;
   display: -webkit-box;
@@ -1405,6 +1417,10 @@ button,
 
 .booking-form input:not([name=user-approval]):focus {
   background-color: #dadde1;
+}
+
+.booking-form br {
+  display: none;
 }
 
 .booking-form input::-webkit-input-placeholder {
@@ -1711,7 +1727,7 @@ button,
   }
 
   .main-screen {
-    padding: 297px 0 275px 0;
+    padding: 268px 0 275px 0;
     background-image: url("../img/jpg/main-screen-tablet.jpg");
     background-size: cover;
     background-position: center;
@@ -1785,7 +1801,7 @@ button,
     font-weight: 500;
     font-size: 12px;
     line-height: 15px;
-    padding: 8px 12px;
+    padding: 8px 11px 8px 12px;
   }
 
   .footer-navigation__logo-link {
@@ -1807,10 +1823,11 @@ button,
   .social-list__icon {
     width: 16px;
     height: 16px;
+    margin-bottom: 3px;
   }
 
   .social-list {
-    width: 100px;
+    width: 118px;
   }
 
   .social-list__item:not(:last-child) {
@@ -1863,7 +1880,7 @@ button,
   }
 
   .products {
-    padding: 90px 0 92px 0;
+    padding: 90px 0 100px 0;
   }
 
   .products h2 {
@@ -1922,7 +1939,7 @@ button,
   .booking {
     background-size: cover;
     background-position: center;
-    padding: 103px 0 100px 0;
+    padding: 95px 0 100px 0;
   }
 
   .booking h2 {
@@ -2033,6 +2050,16 @@ button,
     width: 100%;
   }
 
+  .main-header {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -108px;
+  }
+
+  .main-header .main-header__container {
+    padding: 0 7px 0 15px;
+  }
+
   .main-navigation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2043,7 +2070,7 @@ button,
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 20px 0;
+    padding: 11px 0;
   }
 
   .main-navigation__logo-link {
@@ -2087,10 +2114,10 @@ button,
     position: absolute;
     top: 0;
     right: 0;
-    width: 90%;
+    width: 88%;
     min-width: 285px;
     max-width: 677px;
-    padding: 20px 15px;
+    padding: 11px 2px 21px 16px;
     background-color: #f9fbfd;
   }
 
@@ -2098,6 +2125,14 @@ button,
     color: #011c40;
     width: 42px;
     height: 22px;
+  }
+
+  .main-navigation--menu-open .main-navigation__item:not(:first-child) {
+    margin-left: 0;
+  }
+
+  .main-navigation--menu-open .main-navigation__item:not(:last-child) {
+    margin-bottom: 8px;
   }
 
   .main-navigation--menu-open .main-navigation__list {
@@ -2116,9 +2151,10 @@ button,
     -ms-flex-align: start;
     align-items: flex-start;
     width: 100%;
-    padding-left: 10px;
+    padding-left: 14px;
     padding-bottom: 30px;
-    min-height: 538px;
+    padding-top: 5px;
+    min-height: 507px;
   }
 
   .main-navigation--menu-open .main-navigation__icon--opened {
@@ -2232,25 +2268,29 @@ button,
   }
 
   .main-screen {
-    padding: 185px 0;
+    padding: 222px 0 179px 0;
     background-image: url("../img/jpg/main-screen-tablet.jpg");
     background-position: center;
     background-size: cover;
   }
 
   .main-screen .main-screen__menu-open {
-    margin-left: 70px;
+    position: relative;
+    z-index: -1;
   }
 
   .main-screen h2 {
     font-size: 36px;
     line-height: 45px;
-    margin-bottom: 25px;
+    margin-bottom: 11px;
   }
 
   .main-screen p {
     font-size: 16px;
     line-height: 22px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 230px;
   }
 
   .main-screen .main-screen__container {
@@ -2258,7 +2298,13 @@ button,
   }
 
   .about-as {
-    padding: 65px 0 235px 0;
+    padding: 57px 0 285px 0;
+  }
+
+  .about-as h2 {
+    font-size: 24px;
+    line-height: 34px;
+    margin-bottom: 14px;
   }
 
   .about-as p {
@@ -2278,7 +2324,7 @@ button,
     height: 156px;
     background-size: cover;
     top: auto;
-    bottom: -195px;
+    bottom: -200px;
     right: auto;
   }
 
@@ -2287,7 +2333,7 @@ button,
   }
 
   .main-footer {
-    padding: 40px 0;
+    padding: 33px 0;
   }
 
   .main-footer .main-footer__container {
@@ -2305,7 +2351,9 @@ button,
   }
 
   .footer-navigation .footer-navigation__logo-link {
-    margin-bottom: 30px;
+    margin-bottom: 21px;
+    width: 42px;
+    height: 22px;
   }
 
   .footer-navigation .footer-navigation__list {
@@ -2320,19 +2368,41 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: flex-start;
-    margin-bottom: 30px;
+    margin-bottom: 9px;
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .footer-navigation .footer-navigation__item {
+    margin-left: 0;
+  }
+
+  .footer-navigation .footer-navigation__item:not(:last-child) {
+    margin-bottom: 0;
   }
 
   .footer-navigation .footer-navigation__link {
     padding: 8px 0;
   }
 
+  .footer-navigation .footer-navigation__logo-icon {
+    width: 42px;
+    height: 22px;
+  }
+
+  .social-list {
+    width: 118px;
+    margin-left: -4px;
+  }
+
   .features {
-    padding: 65px 0;
+    padding: 57px 0 65px 0;
   }
 
   .features h2 {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    font-size: 24px;
+    line-height: 36px;
   }
 
   .features .features__container {
@@ -2355,16 +2425,34 @@ button,
   .features-card {
     width: 100%;
     max-width: 750px;
+    padding: 70px 22px 20px 20px;
+  }
+
+  .features-card h3 {
+    display: inline-block;
+    vertical-align: middle;
+    width: 170px;
+    font-size: 18px;
+    line-height: 25px;
+    margin-bottom: 9px;
+  }
+
+  .features-card--zodiack {
+    background-size: 36px 26px;
+  }
+
+  .features-card--zodiack h3 {
+    margin-bottom: 11px;
   }
 
   .products {
-    padding: 65px 0;
+    padding: 56px 0 65px 0;
   }
 
   .products h2 {
     font-size: 24px;
     line-height: 36px;
-    margin-bottom: 40px;
+    margin-bottom: 31px;
   }
 
   .products .products__container {
@@ -2382,6 +2470,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    row-gap: 30px;
   }
 
   .products-list__item {
@@ -2391,6 +2480,7 @@ button,
   .product-card {
     width: 100%;
     max-width: 700px;
+    min-height: 386px;
   }
 
   .product-card__image {
@@ -2407,6 +2497,12 @@ button,
   .product-card__info {
     width: 100%;
     max-width: 700px;
+    padding: 66px 25px 35px 24px;
+  }
+
+  .product-card__info h3 {
+    bottom: 8px;
+    left: 25px;
   }
 
   .product-card__link {
@@ -2414,8 +2510,9 @@ button,
   }
 
   .booking {
-    background-position: -302px center;
-    padding: 65px 0;
+    background-size: cover;
+    background-position: -166px center;
+    padding: 66px 0 64px 0;
   }
 
   .booking h2 {
@@ -2424,12 +2521,20 @@ button,
     text-align: center;
     display: inline;
     width: auto;
+    margin-bottom: 14px;
   }
 
   .booking p {
-    margin-bottom: 40px;
-    display: inline;
-    width: auto;
+    margin-bottom: 34px;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 257px;
+    font-size: 16px;
+    line-height: 22px;
+  }
+
+  .booking br {
+    display: block;
   }
 
   .booking .booking__container {
@@ -2446,27 +2551,46 @@ button,
     padding: 0 15px;
   }
 
-  .booking .booking__text-wrapper {
+  .booking__text-wrapper {
     width: 100%;
   }
 
   .booking-form {
-    padding: 40px 30px;
+    padding: 34px 30px 40px 30px;
   }
 
   .booking-form h3 {
     font-size: 18px;
     line-height: 25px;
     text-align: center;
-    margin-bottom: 35px;
+    margin-bottom: 28px;
+  }
+
+  .booking-form label {
+    padding-left: 28px;
+  }
+
+  .booking-form button {
+    margin-top: 26px;
   }
 
   .booking-form label::before {
-    top: 3px;
+    top: 2px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+  }
+
+  .booking-form br {
+    display: block;
+  }
+
+  .booking-form input[name=user-email] {
+    margin-bottom: 15px;
   }
 
   .contacts {
-    padding: 65px 0;
+    padding: 59px 0 65px 0;
   }
 
   .contacts .contacts__container {
@@ -2490,8 +2614,9 @@ button,
   }
 
   .contacts__text-wrapper {
-    margin-bottom: 43px;
-    max-width: 90%;
+    margin-top: 0;
+    margin-bottom: 35px;
+    max-width: 98%;
   }
 }
 
@@ -2539,6 +2664,18 @@ button,
     width: 100%;
     max-width: 560px;
     background-size: 22px 22px;
+  }
+
+  .features-card--compact {
+    background-size: 21px 26px;
+  }
+
+  .features-card--all {
+    background-size: 27px 26px;
+  }
+
+  .features-card--zodiack {
+    background-size: 36px 26px;
   }
 }
 

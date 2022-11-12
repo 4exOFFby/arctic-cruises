@@ -1,11 +1,23 @@
 .main-header {
   background-color: transparent;
-  position: relative;
+  position: absolute;
+  top: 0;
   z-index: 1;
   width: 100%;
-  margin-bottom: -108px;
 }
 
 .main-header.main-header--no-js {
   margin-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .main-header {
+    position: relative;
+    z-index: 1;
+    margin-bottom: -108px;
+
+    .main-header__container {
+      padding: 0 7px 0 15px;
+    }
+  }
 }

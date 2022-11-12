@@ -43,7 +43,7 @@
 
 @media (max-width: 1023px) {
   .main-screen {
-    padding: 297px 0 275px 0;
+    padding: 268px 0 275px 0;
     background-image: url("../img/jpg/main-screen-tablet.jpg");
     background-size: cover;
     background-position: center;
@@ -69,24 +69,28 @@
 
 @media (max-width: 767px) {
   .main-screen {
-    padding: 185px 0;
+    padding: 222px 0 179px 0;
     background-image: url("../img/jpg/main-screen-tablet.jpg");
     background-position: center;
     background-size: cover;
 
     .main-screen__menu-open {
-      margin-left: 70px;
+      position: relative;
+      z-index: -1;
     }
 
     h2 {
       font-size: 36px;
       line-height: 45px;
-      margin-bottom: 25px;
+      margin-bottom: 11px;
     }
 
     p {
       font-size: 16px;
       line-height: 22px;
+      display: inline-block;
+      vertical-align: middle;
+      width: 230px;
     }
 
     .main-screen__container {

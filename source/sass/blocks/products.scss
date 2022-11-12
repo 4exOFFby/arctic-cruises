@@ -28,7 +28,7 @@
 
 @media (max-width: 1023px) {
   .products {
-    padding: 90px 0 92px 0;
+    padding: 90px 0 100px 0;
 
     h2 {
       font-size: 26px;
@@ -43,12 +43,12 @@
 
 @media (max-width: 767px) {
   .products {
-    padding: 65px 0;
+    padding: 56px 0 65px 0;
 
     h2 {
       font-size: 24px;
       line-height: 36px;
-      margin-bottom: 40px;
+      margin-bottom: 31px;
     }
 
     .products__container {

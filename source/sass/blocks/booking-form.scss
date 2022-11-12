@@ -30,6 +30,10 @@
     }
   }
 
+  br {
+    display: none;
+  }
+
   input::placeholder {
     font-family: "Montserrat", "Arial", sans-serif;
     font-style: normal;
@@ -123,17 +127,36 @@
 
 @media (max-width: 767px) {
   .booking-form {
-    padding: 40px 30px;
+    padding: 34px 30px 40px 30px;
 
     h3 {
       font-size: 18px;
       line-height: 25px;
       text-align: center;
-      margin-bottom: 35px;
+      margin-bottom: 28px;
+    }
+
+    label {
+      padding-left: 28px;
+    }
+
+    button {
+      margin-top: 26px;
     }
 
     label::before {
-      top: 3px;
+      top: 2px;
+      left: 0;
+      width: 20px;
+      height: 20px;
+    }
+
+    br {
+      display: block;
+    }
+
+    input[name="user-email"] {
+      margin-bottom: 15px;
     }
   }
 }
