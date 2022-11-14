@@ -1,7 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {headerMenuHandler, buttonOpen, headerMenu, header} from './modules/header-menu';
-import {navigationLinks, featuresSection, productsSection, bookingSection, contactsSection, scrollHandler} from './modules/scroll-to';
 
 // ---------------------------------
 
@@ -16,27 +15,6 @@ window.addEventListener('DOMContentLoaded', () => {
   header.classList.remove('main-header--no-js');
   if (buttonOpen) {
     buttonOpen.addEventListener('click', headerMenuHandler);
-  }
-
-  if (navigationLinks.length > 0) {
-    for (let link of navigationLinks) {
-      link.addEventListener('click', (evt) => {
-        switch (evt.target.ariaLabel) {
-          case 'features':
-            scrollHandler(evt, featuresSection);
-            break;
-          case 'products':
-            scrollHandler(evt, productsSection);
-            break;
-          case 'booking':
-            scrollHandler(evt, bookingSection);
-            break;
-          case 'contacts':
-            scrollHandler(evt, contactsSection);
-            break;
-        }
-      });
-    }
   }
 
   // ---------------------------------
