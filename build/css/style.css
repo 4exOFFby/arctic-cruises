@@ -919,6 +919,9 @@ button,
   margin: 0;
   margin-top: 56px;
   margin-bottom: 23px;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 450px;
 }
 
 .about-as p {
@@ -943,7 +946,7 @@ button,
   width: 560px;
   height: 301px;
   position: absolute;
-  top: -56px;
+  top: 0;
   right: 103px;
   background-image: url("../img/jpg/about-as-pinguins.jpg");
   background-repeat: no-repeat;
@@ -1413,6 +1416,11 @@ button,
   margin-bottom: 20px;
   padding: 11px 16px;
   border: none;
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #011c40;
 }
 
 .booking-form input:not([name=user-approval]):focus {
@@ -1518,6 +1526,7 @@ button,
   color: #011c40;
   border: none;
   margin-top: 32px;
+  background-color: #f9fbfd;
   cursor: pointer;
 }
 

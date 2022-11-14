@@ -24,6 +24,11 @@
     margin-bottom: 20px;
     padding: 11px 16px;
     border: none;
+    font-family: "Montserrat", "Arial", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #011c40;
 
     &:focus {
       background-color: #dadde1;
@@ -93,6 +98,7 @@
     color: #011c40;
     border: none;
     margin-top: 32px;
+    background-color: #f9fbfd;
     cursor: pointer;
 
     &:hover,
