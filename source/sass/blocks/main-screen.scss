@@ -1,16 +1,5 @@
 .main-screen {
-  background-color: #6f6fe5;
-  background-image: url("../img/jpg/main-screen.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  padding: 270px 0 286px 0;
-
-  @media (min-resolution: 2dppx) {
-    .main-screen {
-      background-image: url("../img/jpg/main-screen-retina.jpg");
-    }
-  }
+  padding: 162px 0 286px 0;
 
   h2 {
     font-family: "Montserrat", "Arial", sans-serif;
@@ -43,10 +32,7 @@
 
 @media (max-width: 1023px) {
   .main-screen {
-    padding: 268px 0 275px 0;
-    background-image: url("../img/jpg/main-screen-tablet.jpg");
-    background-size: cover;
-    background-position: center;
+    padding: 189px 0 275px 0;
 
     h2 {
       font-size: 50px;
@@ -61,7 +47,7 @@
     .main-screen__container {
       width: 100%;
       max-width: 1023px;
-      padding: 0 45px;
+      padding: 0 21px;
       margin: 0 auto;
     }
   }
@@ -69,10 +55,8 @@
 
 @media (max-width: 767px) {
   .main-screen {
-    padding: 222px 0 179px 0;
-    background-image: url("../img/jpg/main-screen-tablet.jpg");
-    background-position: center;
-    background-size: cover;
+    padding: 114px 0 180px 0;
+
 
     .main-screen__menu-open {
       position: relative;
@@ -94,7 +78,7 @@
     }
 
     .main-screen__container {
-      padding: 0 15px;
+      padding: 0 0;
     }
   }
 }
