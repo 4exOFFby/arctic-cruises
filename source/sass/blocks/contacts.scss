@@ -33,7 +33,7 @@
 
 .contacts__text-wrapper {
   max-width: 500px;
-  margin-top: 76px;
+  align-self: center;
 }
 
 @media (min-width: 1024px) and (max-width: 1300px) {
@@ -61,7 +61,7 @@
 
   .contacts__text-wrapper {
     max-width: 325px;
-    margin-top: 66px;
+    align-self: center;
   }
 
   .contacts__map {
@@ -103,6 +103,7 @@
   .contacts__text-wrapper {
     margin-top: 0;
     margin-bottom: 35px;
+    align-self: flex-start;
     max-width: 98%;
   }
 }
