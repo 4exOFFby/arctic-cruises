@@ -78,6 +78,10 @@
   }
 
   // Открытие меню
+  .main-navigation--open {
+    position: fixed;
+  }
+
   .main-navigation--menu-open {
     position: absolute;
     top: 0;
@@ -141,16 +145,17 @@
 
   // Не подгрузился Js
   .main-navigation--no-js {
-    background-color: transparent;
+    background-color: #f9fbfd;
     position: static;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     padding-top: 20px;
+    padding-left: 15px;
     width: 100%;
 
     .main-navigation__logo-icon {
-      color: #f9fbfd;
+      color: #011c40;
       width: 42px;
       height: 22px;
     }
@@ -162,12 +167,12 @@
     .main-navigation__list {
       display: flex;
       flex-direction: column;
-      background-color: transparent;
+      background-color: #f9fbfd;
       position: static;
       align-items: flex-start;
       width: 100%;
       padding-left: 10px;
-      padding-bottom: 0;
+      padding-bottom: 25px;
       min-height: 200px;
     }
 
@@ -181,7 +186,7 @@
     }
 
     .main-navigation__link {
-      color: #f9fbfd;
+      color: #011c40;
       font-weight: 500;
       font-size: 18px;
       line-height: 22px;
