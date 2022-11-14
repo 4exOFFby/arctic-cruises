@@ -28,11 +28,6 @@
   }
 }
 
-.main-header.main-header--no-js {
-  margin-bottom: 0;
-  position: relative;
-  z-index: 5;
-}
 
 @media (max-width: 767px) {
   .main-header {
@@ -49,6 +44,17 @@
 
     .main-header__container {
       padding: 0 7px 0 15px;
+    }
+  }
+
+  .main-header.main-header--no-js {
+    .main-header__container {
+      padding: 0;
+    }
+
+    h2,
+    p {
+      margin-left: 15px;
     }
   }
 }

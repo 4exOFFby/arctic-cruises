@@ -1,6 +1,6 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
-import {headerMenuHandler, buttonOpen, headerMenu, header} from './modules/header-menu';
+import {headerOpenMenuHandler, buttonOpen, headerMenu, header} from './modules/header-menu';
 
 // ---------------------------------
 
@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', () => {
   headerMenu.classList.remove('main-navigation--no-js');
   header.classList.remove('main-header--no-js');
   if (buttonOpen) {
-    buttonOpen.addEventListener('click', headerMenuHandler);
+    buttonOpen.addEventListener('click', headerOpenMenuHandler);
   }
 
   // ---------------------------------
