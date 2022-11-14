@@ -1,20 +1,51 @@
 .main-header {
-  background-color: transparent;
-  position: absolute;
-  top: 0;
-  z-index: 1;
+  position: static;
   width: 100%;
+  background-color: #6f6fe5;
+  background-image: url("../img/jpg/main-screen.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  @media (min-resolution: 2dppx) {
+    .main-header {
+      background-image: url("../img/jpg/main-screen-retina.jpg");
+    }
+  }
+}
+
+@media (max-width: 1023px) {
+  .main-header {
+    background-image: url("../img/jpg/main-screen-tablet.jpg");
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      .main-header {
+        background-image: url("../img/jpg/main-screen-tablet-retina.jpg");
+      }
+    }
+  }
 }
 
 .main-header.main-header--no-js {
   margin-bottom: 0;
+  position: relative;
+  z-index: 5;
 }
 
 @media (max-width: 767px) {
   .main-header {
-    position: relative;
-    z-index: 1;
-    margin-bottom: -108px;
+    position: static;
+    background-image: url("../img/jpg/main-screen-tablet.jpg");
+    background-position: center;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      .main-header {
+        background-image: url("../img/jpg/main-screen-tablet-retina.jpg");
+      }
+    }
 
     .main-header__container {
       padding: 0 7px 0 15px;

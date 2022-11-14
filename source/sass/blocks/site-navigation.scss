@@ -24,8 +24,8 @@
   }
 }
 
-.site-navigation__item:not(:first-child) {
-  margin-left: 2px;
+.site-navigation__item:not(:last-child) {
+  margin-right: 2px;
 }
 
 @media (max-width: 1023px) {
