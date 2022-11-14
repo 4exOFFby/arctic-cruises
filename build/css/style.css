@@ -907,7 +907,7 @@ button,
 }
 
 .about-as {
-  padding: 112px 0 205px 0;
+  padding: 112px 0 148px 0;
 }
 
 .about-as h2 {
@@ -918,7 +918,6 @@ button,
   line-height: 42px;
   color: #011c40;
   margin: 0;
-  margin-top: 56px;
   margin-bottom: 23px;
   display: inline-block;
   vertical-align: middle;
@@ -936,10 +935,20 @@ button,
   max-width: 512px;
 }
 
+.about-as .about-as__text-wrapper {
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
 .about-as .about-as__container {
   padding-right: 648px;
   padding-left: 103px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 298px;
 }
 
 .about-as .about-as__container::before {
@@ -1330,9 +1339,9 @@ button,
   padding: 50px 0 49px 0;
   background-color: #61bad8;
   background-image: url("../img/jpg/booking-background.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -26px;
+  background-position: center -17px;
+  background-size: cover;
 }
 
 .booking h2 {
@@ -1596,7 +1605,9 @@ button,
 
 .contacts__text-wrapper {
   max-width: 500px;
-  margin-top: 76px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .map {
@@ -1761,7 +1772,7 @@ button,
   }
 
   .about-as {
-    padding: 91px 0 93px 0;
+    padding: 91px 0 75px 0;
   }
 
   .about-as .about-as__container::before {
@@ -1785,6 +1796,11 @@ button,
     font-size: 16px;
     line-height: 24px;
     width: 325px;
+  }
+
+  .about-as .about-as__text-wrapper {
+    -ms-flex-item-align: start;
+    align-self: flex-start;
   }
 
   .about-as .about-as__container {
@@ -1947,9 +1963,10 @@ button,
   }
 
   .booking {
-    background-size: cover;
-    background-position: center;
     padding: 95px 0 100px 0;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
   }
 
   .booking h2 {
@@ -2017,7 +2034,9 @@ button,
 
   .contacts__text-wrapper {
     max-width: 325px;
-    margin-top: 66px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .contacts__map {
@@ -2520,8 +2539,9 @@ button,
   }
 
   .booking {
+    background-repeat: no-repeat;
+    background-position: right bottom;
     background-size: cover;
-    background-position: -166px center;
     padding: 66px 0 64px 0;
   }
 
@@ -2626,6 +2646,8 @@ button,
   .contacts__text-wrapper {
     margin-top: 0;
     margin-bottom: 35px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
     max-width: 98%;
   }
 }
@@ -2711,7 +2733,10 @@ button,
 
 @media (min-width: 1024px) and (max-width: 1240px) {
   .booking {
-    background-position: center;
+    background-image: url("../img/jpg/booking-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
   }
 
   .booking h2 {
@@ -2728,6 +2753,12 @@ button,
 }
 
 @media (min-width: 1096px) and (max-width: 1300px) {
+  .booking {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+  }
+
   .booking h2 {
     width: 440px;
   }

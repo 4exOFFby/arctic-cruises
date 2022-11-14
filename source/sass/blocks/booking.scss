@@ -2,9 +2,9 @@
   padding: 50px 0 49px 0;
   background-color: #61bad8;
   background-image: url("../img/jpg/booking-background.jpg");
-  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center -26px;
+  background-position: center -17px;
+  background-size: cover;
 
   @media (min-resolution: 2dppx) {
     .booking {
@@ -56,7 +56,10 @@
 
 @media (min-width: 1024px) and (max-width: 1240px) {
   .booking {
-    background-position: center;
+    background-image: url("../img/jpg/booking-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
 
     h2 {
       width: 440px;
@@ -74,6 +77,10 @@
 
 @media (min-width: 1096px) and (max-width: 1300px) {
   .booking {
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+
     h2 {
       width: 440px;
     }
@@ -82,9 +89,10 @@
 
 @media (max-width: 1023px) {
   .booking {
-    background-size: cover;
-    background-position: center;
     padding: 95px 0 100px 0;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-size: cover;
 
     h2 {
       margin-bottom: 5px;
@@ -119,8 +127,9 @@
 
 @media (max-width: 767px) {
   .booking {
+    background-repeat: no-repeat;
+    background-position: right bottom;
     background-size: cover;
-    background-position: -166px center;
     padding: 66px 0 64px 0;
 
     h2 {
