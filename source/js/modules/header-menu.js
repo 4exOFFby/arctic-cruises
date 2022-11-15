@@ -16,7 +16,7 @@ const headerCloseHandler = () => {
   headerMenu.classList.remove('main-navigation--menu-open');
   body.classList.remove('main-navigation--open');
   buttonOpen.removeEventListener('click', headerCloseHandler);
-  document.removeEventListener('touchstart', headerCloseHandler);
+  document.removeEventListener('touchend', headerCloseHandler);
   if (mainTitle) {
     mainTitle.classList.remove('main-screen__menu-open');
   }
@@ -29,7 +29,7 @@ const headerCloseHandler = () => {
 const headerOpenMenuHandler = () => {
   headerMenu.classList.add('main-navigation--menu-open');
   body.classList.add('main-navigation--open');
-  stopListenerOnFocus(headerMenu, 'touchstart');
+  stopListenerOnFocus(headerMenu, 'touchend');
   for (let link of navigationLinks) {
     link.addEventListener('click', () => {
       body.classList.remove('main-navigation--open');
@@ -45,7 +45,7 @@ const headerOpenMenuHandler = () => {
     });
   }
   buttonOpen.addEventListener('click', headerCloseHandler);
-  document.addEventListener('touchstart', headerCloseHandler);
+  document.addEventListener('touchend', headerCloseHandler);
 
   if (mainTitle) {
     mainTitle.classList.add('main-screen__menu-open');
