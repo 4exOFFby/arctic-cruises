@@ -2164,16 +2164,30 @@ button,
     top: 0;
     right: 0;
     width: 88%;
+    min-height: 100%;
     min-width: 285px;
     max-width: 677px;
     padding: 11px 2px 21px 16px;
     background-color: #f9fbfd;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    overflow-y: scroll;
   }
 
   .main-navigation--menu-open .main-navigation__logo-icon {
     color: #011c40;
     width: 42px;
     height: 22px;
+  }
+
+  .main-navigation--menu-open .main-navigation__logo-link {
+    margin-top: 8px;
+    z-index: 11;
+  }
+
+  .main-navigation--menu-open .main-navigation__button {
+    z-index: 11;
   }
 
   .main-navigation--menu-open .main-navigation__item:not(:first-child) {
@@ -2203,7 +2217,7 @@ button,
     padding-left: 14px;
     padding-bottom: 30px;
     padding-top: 5px;
-    min-height: 507px;
+    min-height: 499px;
     z-index: 10;
   }
 
@@ -2324,6 +2338,7 @@ button,
 
   .main-screen .main-screen__menu-open {
     position: relative;
+    margin-top: 31px;
     z-index: -1;
   }
 
