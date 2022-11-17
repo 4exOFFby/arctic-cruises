@@ -2718,9 +2718,16 @@ button,
 
 @media (min-width: 1024px) and (max-width: 1366px) {
   .about-as img {
-    width: 42.2vw;
-    height: 22.8vw;
-    margin-left: 100px;
+    width: 33vw;
+    height: 19vw;
+    margin-left: 0;
+  }
+
+  .about-as .about-as__text-wrapper {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    max-width: 445px;
   }
 }
 
