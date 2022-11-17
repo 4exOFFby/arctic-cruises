@@ -85,6 +85,10 @@
               ледяные айсберги, несколько видов пингвинов, китов, морских котиков и многое другое.
             </p>
           </div>
+          <picture>
+            <source type="image/webp" srcset="./img/jpg/about-as-pinguins.webp 1x, ./img/jpg/about-as-pinguins-retina.webp 2x">
+            <img scr="./img/jpg/about-as-pinguins.jpg" srcset="./img/jpg/about-as-pinguins-retina.jpg 2x" width="560" height="301" alt="Милые пингвины.">
+          </picture>
         </div>
       </section>
 
@@ -335,7 +339,7 @@
             <h3>Оставьте заявку<br> и мы свяжемся с вами в&nbsp;ближайшее время</h3>
             <input type="text" name="user-name" id="user-name" minlength="1" placeholder="Имя" required>
             <label for="user-name" class="visually-hidden">Введите Ваше имя</label>
-            <input type="tel" name="user-number" id="user-number" minlength="11" placeholder="Телефон" required>
+            <input type="number" name="user-number" id="user-number" placeholder="Телефон" required>
             <label for="user-number" class="visually-hidden">Введите Ваш номер телефона</label>
             <input type="email" name="user-email" id="user-email" placeholder="Email" required>
             <label for="user-email" class="visually-hidden">Введите Вашу электронную почту</label>
