@@ -5,7 +5,6 @@ const mainDescription = document.querySelector('.main-screen__container p');
 const header = document.querySelector('.main-header');
 const body = document.querySelector('body');
 const navigationLinks = document.querySelectorAll('.main-navigation__link');
-const overlay = document.querySelector('.main-header__container');
 
 const stopListenerOnFocus = (object, method) => {
   object.addEventListener(method, (evt) => {
@@ -15,8 +14,8 @@ const stopListenerOnFocus = (object, method) => {
 
 const headerCloseHandler = () => {
   headerMenu.classList.remove('main-navigation--menu-open');
+  headerMenu.classList.remove('main-navigation--open-overlay');
   body.classList.remove('main-navigation--open');
-  overlay.classList.remove('main-header--menu-open');
   buttonOpen.removeEventListener('click', headerCloseHandler);
   document.removeEventListener('touchend', headerCloseHandler);
   if (mainTitle) {
@@ -30,8 +29,8 @@ const headerCloseHandler = () => {
 
 const headerOpenMenuHandler = () => {
   headerMenu.classList.add('main-navigation--menu-open');
+  headerMenu.classList.add('main-navigation--open-overlay');
   body.classList.add('main-navigation--open');
-  overlay.classList.add('main-header--menu-open');
   stopListenerOnFocus(headerMenu, 'touchend');
   for (let link of navigationLinks) {
     link.addEventListener('click', () => {
